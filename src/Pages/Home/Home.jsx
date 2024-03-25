@@ -1,9 +1,12 @@
-import Navbar from "../../Components/Navbar/Navbar";
+import Books from "../../Components/Books";
+import Hero from "../../Components/Hero";
+
 
 const Home = () => {
     return (
-        <div>
-          <Navbar></Navbar>
+        <div className="w-[1280px] mx-auto">
+          <Hero/>
+          <Books/>
         </div>
     );
 };
