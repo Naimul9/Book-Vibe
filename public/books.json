@@ -21,7 +21,7 @@
         "totalPages": 336,
         "rating": 4.8,
         "category": "Fiction",
-        "tags": ["Drama", "Coming-of-Age", "Social Issues"],
+        "tags": ["Drama", "Social Issues"],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
       },
@@ -34,7 +34,7 @@
         "totalPages": 328,
         "rating": 4.6,
         "category": "Fiction",
-        "tags": ["Dystopian", "Political", "Social Commentary"],
+        "tags": ["Dystopian", "Political"],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
       },
@@ -47,7 +47,7 @@
         "totalPages": 224,
         "rating": 4.3,
         "category": "Fiction",
-        "tags": ["Classic", "Bildungsroman", "Cultural Critique"],
+        "tags": ["Classic", "Bildungsroman"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
       },
@@ -60,7 +60,7 @@
         "totalPages": 432,
         "rating": 4.7,
         "category": "Fiction",
-        "tags": ["Classic", "Romance", "Satire"],
+        "tags": ["Classic", "Romance"],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
       },
@@ -73,7 +73,7 @@
         "totalPages": 310,
         "rating": 4.9,
         "category": "Fantasy",
-        "tags": ["Adventure", "Epic", "Middle-earth"],
+        "tags": ["Adventure", "Epic"],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
       }
