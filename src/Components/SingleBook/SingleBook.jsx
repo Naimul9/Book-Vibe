@@ -1,11 +1,14 @@
-
+import { AiOutlineStar } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const SingleBook = ({item}) => {
 
     const {bookName, bookId, author,image,review, totalPages, rating, category, tags,publisher, yearOfPublishing   } = item
     return (
+		<Link to={`/bookDetail/${bookId}`}>
         <div > 
+         
             
-            <section className="h-[481px] w-[374px] border rounded-xl">
+          <section className="h-[481px] w-[374px] border rounded-xl">
 	<div className="container p-6 mx-auto">
 	
 		<div>
@@ -24,9 +27,9 @@ const SingleBook = ({item}) => {
                     <p className="font-medium">By : {author}</p>
 
 
-					<div className="flex flex-wrap justify-between  text-gray-400 mt-10">
+					<div className="flex flex-wrap justify-between  text-black mt-10  font-medium">
 						<span>{category} </span>
-						<p><span>2.1K views</span></p>
+						<p className="flex items-center justify-center gap-2  font-medium"> {rating} <AiOutlineStar /> </p>
 					</div>
 				</div>
 			</article>
@@ -35,8 +38,11 @@ const SingleBook = ({item}) => {
 	</div>
 </section>
 
+          
+         
 
         </div>
+		</Link>
     );
 };
 

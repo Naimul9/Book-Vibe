@@ -6,10 +6,8 @@ const Books = () => {
 
     const books = useLoaderData()
 
+
     return (
-
-    
-
 
         <div className='mt-10 px-10 '>
 

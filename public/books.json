@@ -1,81 +1,80 @@
- [
-      {
-        "bookId": 1,
-        "bookName": "The Great Gatsby",
-        "author": "F. Scott Fitzgerald",
-        "image": "https://i.ibb.co/zQMQgCq/The-Great-Gatsby-Cover-1925-Retouched.jpg",
-        "review": "A timeless classic depicting the glamorous and decadent lives of the wealthy elite in the Jazz Age.",
-        "totalPages": 180,
-        "rating": 4.5,
-        "category": "Fiction",
-        "tags": ["Classic", "Drama", "Romance"],
-        "publisher": "Scribner",
-        "yearOfPublishing": 1925
-      },
-      {
-        "bookId": 2,
-        "bookName": "To Kill a Mockingbird",
-        "author": "Harper Lee",
-        "image": "https://i.ibb.co/LY2vQ7G/To-Kill-a-Mockingbird-first-edition-cover.jpg",
-        "review": "A powerful narrative addressing racial injustice and moral growth in the American South.",
-        "totalPages": 336,
-        "rating": 4.8,
-        "category": "Fiction",
-        "tags": ["Drama", "Social Issues"],
-        "publisher": "J. B. Lippincott & Co.",
-        "yearOfPublishing": 1960
-      },
-      {
-        "bookId": 3,
-        "bookName": "1984",
-        "author": "George Orwell",
-        "image": "https://i.ibb.co/gJkVZLS/book-75042021-07-08-1625718517.jpg",
-        "review": "A dystopian masterpiece warning of the dangers of totalitarianism and surveillance.",
-        "totalPages": 328,
-        "rating": 4.6,
-        "category": "Fiction",
-        "tags": ["Dystopian", "Political"],
-        "publisher": "Secker & Warburg",
-        "yearOfPublishing": 1949
-      },
-      {
-        "bookId": 4,
-        "bookName": "The Catcher in the Rye",
-        "author": "J.D. Salinger",
-        "image": "https://i.ibb.co/sKrVy5V/The-Catcher-in-the-Rye-1951-first-edition-cover.jpg",
-        "review": "A coming-of-age novel capturing the disillusionment and alienation of adolescence.",
-        "totalPages": 224,
-        "rating": 4.3,
-        "category": "Fiction",
-        "tags": ["Classic", "Bildungsroman"],
-        "publisher": "Little, Brown and Company",
-        "yearOfPublishing": 1951
-      },
-      {
-        "bookId": 5,
-        "bookName": "Pride and Prejudice",
-        "author": "Jane Austen",
-        "image": "https://i.ibb.co/SNVM9Lg/51zj-e-O-p-L-SY445-SX342.jpg",
-        "review": "A witty and romantic comedy of manners exploring societal expectations and love.",
-        "totalPages": 432,
-        "rating": 4.7,
-        "category": "Fiction",
-        "tags": ["Classic", "Romance"],
-        "publisher": "T. Egerton, Whitehall",
-        "yearOfPublishing": 1813
-      },
-      {
-        "bookId": 6,
-        "bookName": "The Hobbit",
-        "author": "J.R.R. Tolkien",
-        "image": "https://i.ibb.co/jRc7VRb/y648.jpg",
-        "review": "An enchanting tale of adventure and friendship set in a richly imagined fantasy world.",
-        "totalPages": 310,
-        "rating": 4.9,
-        "category": "Fantasy",
-        "tags": ["Adventure", "Epic"],
-        "publisher": "George Allen & Unwin",
-        "yearOfPublishing": 1937
-      }
-    ]
-  
+[
+  {
+    "bookId": 1,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/zQMQgCq/The-Great-Gatsby-Cover-1925-Retouched.jpg",
+    "review": "A timeless classic depicting the glamorous and decadent lives of the wealthy elite in the Jazz Age. The narrative, rich with symbolism, unravels the facade of opulence to reveal the emptiness beneath. Fitzgerald's lyrical prose captures the essence of an era marked by excess and disillusionment, making it a poignant commentary on the American Dream.",
+    "totalPages": 180,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": ["Classic", "Drama", "Romance"],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 2,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/LY2vQ7G/To-Kill-a-Mockingbird-first-edition-cover.jpg",
+    "review": "A powerful narrative addressing racial injustice and moral growth in the American South. Through the innocent eyes of Scout Finch, Lee masterfully explores themes of empathy, compassion, and the complexities of human nature. The courtroom drama and its aftermath resonate with timeless relevance, provoking introspection and societal reflection.",
+    "totalPages": 336,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Drama", "Social Issues"],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 3,
+    "bookName": "1984",
+    "author": "George Orwell",
+    "image": "https://i.ibb.co/gJkVZLS/book-75042021-07-08-1625718517.jpg",
+    "review": "A dystopian masterpiece warning of the dangers of totalitarianism and surveillance. Orwell's chilling portrayal of a society controlled by omnipresent government surveillance and propaganda remains eerily prescient. The bleak reality of Big Brother's tyranny serves as a cautionary tale against the erosion of individual freedoms and the manipulation of truth.",
+    "totalPages": 328,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": ["Dystopian", "Political"],
+    "publisher": "Secker & Warburg",
+    "yearOfPublishing": 1949
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/sKrVy5V/The-Catcher-in-the-Rye-1951-first-edition-cover.jpg",
+    "review": "A coming-of-age novel capturing the disillusionment and alienation of adolescence. Holden Caulfield's journey through the gritty streets of New York City exposes the phoniness of adult society. Salinger's raw and introspective narrative resonates with readers, offering solace in the midst of existential angst.",
+    "totalPages": 224,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": ["Classic", "Bildungsroman"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 5,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/SNVM9Lg/51zj-e-O-p-L-SY445-SX342.jpg",
+    "review": "A witty and romantic comedy of manners exploring societal expectations and love. Austen's keen observations on class, marriage, and social norms are woven into a narrative brimming with sparkling wit and unforgettable characters. Elizabeth Bennet's journey of self-discovery amidst the intricacies of courtship remains as captivating as ever.",
+    "totalPages": 432,
+    "rating": 4.7,
+    "category": "Fiction",
+    "tags": ["Classic", "Romance"],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/jRc7VRb/y648.jpg",
+    "review": "An enchanting tale of adventure and friendship set in a richly imagined fantasy world. Tolkien's mastery of language and world-building transports readers to the heart of Middle-earth, where bravery and camaraderie triumph over darkness. Bilbo Baggins' hero's journey continues to inspire generations of readers with its timeless magic.",
+    "totalPages": 310,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": ["Adventure", "Epic"],
+    "publisher": "George Allen & Unwin",
+    "yearOfPublishing": 1937
+  }
+]
