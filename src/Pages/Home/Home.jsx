@@ -7,6 +7,7 @@ const Home = () => {
         <div className="w-[1280px] mx-auto">
           <Hero/>
           <Books/>
+          
         </div>
     );
 };
