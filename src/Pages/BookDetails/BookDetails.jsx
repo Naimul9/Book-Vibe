@@ -1,7 +1,7 @@
 import {  Link, useLoaderData, useParams} from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-import { saveReadData } from "../../utility/localStorage";
+import { getReadData, saveReadData } from "../../utility/localStorage";
 
 
 const BookDetails = () => {
@@ -10,15 +10,25 @@ const BookDetails = () => {
     const idInt = parseInt(bookId)
     const book = singleBooks.find(book =>book.bookId === idInt)
 
-    const handleRead = ()=>{
-        saveReadData(idInt)
-        toast('Book added Successfully')
-    }  
+   
+    const handleRead = () => {
+        const alreadyRead = getReadData().includes(idInt);
+        if (alreadyRead) {
+            toast('Book already added to Read list');
+        } else {
+            saveReadData(idInt);
+            toast('Book added to Read list');
+        }
+    };
 
-    const handleWishlist = ()=> {
-        toast ('Book added to Wishlist')
-    }
-    
+    const handleWishlist = () => {
+        const alreadyRead = getReadData().includes(idInt);
+        if (alreadyRead) {
+            toast('You have already read this book and it cannot be added to the Wishlist.');
+        } else {
+            toast('Book added to Wishlist');
+        }
+    };
 
     return (
         <div className="hero min-h-screen ">

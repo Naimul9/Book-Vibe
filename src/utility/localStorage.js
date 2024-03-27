@@ -5,6 +5,10 @@ const getStoredReadData = () =>{
     }
     return []
 }
+ 
+const getReadData = () => {
+    return getStoredReadData();
+};
 
 const saveReadData = bookId =>{
     const storedReadData = getStoredReadData()
@@ -13,10 +17,10 @@ const saveReadData = bookId =>{
         storedReadData.push(bookId)
         localStorage.setItem('read-data', JSON.stringify(storedReadData))
     }
-
+ 
 }
 
 
 
 
-export { getStoredReadData, saveReadData}
+export { getStoredReadData, getReadData, saveReadData}
