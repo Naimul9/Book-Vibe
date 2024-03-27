@@ -60,8 +60,8 @@ const BookDetails = () => {
 
 <div className="flex gap-4 mt-10 ">
  
- <Link>
- <button onClick={handleRead()} className="btn bg-[#1313134D] w-[101px] h-[57px] text-[18px] font-semibold ">Read</button>  </Link>
+ <Link to={`/bookDetail/${bookId}`}>
+ <button onClick={handleRead} className="btn bg-[#1313134D] w-[101px] h-[57px] text-[18px] font-semibold ">Read</button>  </Link>
 
 
       <button onClick={handleWishlist} className="btn bg-[#50B1C9] w-[128px] h-[57px] text-[18px] font-semibold text-white  ">Wishlist</button>

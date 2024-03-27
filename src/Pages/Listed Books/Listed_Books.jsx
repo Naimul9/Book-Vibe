@@ -8,7 +8,7 @@ const Listed_Books = () => {
     const [tabIndex, setTabIndex] = useState(0)
     return (
   
-<div>
+<div className="w-[1170px] ">
 
 <div className='h-[100px] bg-[#1313130D] text-center text-[28px] font-bold rounded-lg items-center flex justify-center mb-10'>Books</div>
 
@@ -27,7 +27,7 @@ const Listed_Books = () => {
 </div>
 
 {/* TAB */}
-<div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap text-black">
+<div className="flex items-center  overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap text-black w-[1170px] mx-auto">
 	<Link to={`readBooks/&{bookId}`}  onClick={()=> setTabIndex(0)} rel="noopener noreferrer" href="#" className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex ===0 ? 'border border-b-0' : 'border-b'} rounded-t-lg border-gray-400`}>
 		<span>Read Books</span>
 	</Link>

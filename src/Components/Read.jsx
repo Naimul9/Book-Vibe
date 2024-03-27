@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredReadData } from "../utility/localStorage";
+import BookCard from "./BookCard";
 
 const Read = () => {
 
@@ -22,9 +23,12 @@ if(reads.length>0){
 
    
     return (
-        <div>
-           <p>book Name : {selectedBook.length} </p>
-           
+        <div className="flex flex-col gap-5 ">
+         
+            {
+                selectedBook.map(read =>  <BookCard read={read}
+                     key={read.bookId}> </BookCard>   )
+            }
         </div>
     );
 };
