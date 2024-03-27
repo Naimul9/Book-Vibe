@@ -4,7 +4,9 @@ import { CiLocationOn } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
 const BookCard = ({read}) => {
- const {bookName, bookId, author,image,  rating, category, tags, publisher, totalPages, yearOfPublishing }  = read 
+
+   
+ const { bookName, bookId, author,image,  rating, category, tags, publisher, totalPages, yearOfPublishing }  = read 
     return (
      <div className="h-[277px] w-[1170px] mt-4 flex gap-4">
 

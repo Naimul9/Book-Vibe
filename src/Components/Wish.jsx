@@ -1,33 +1,24 @@
+
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { getStoredReadData } from "../utility/localStorage";
+import { getWishlistData } from "../utility/localStorage";
 import BookCard from "./BookCard";
 
-
 const Wish = () => {
-    const reads = useLoaderData()
+    const wishlistBooks = useLoaderData();
+    const [selectedBooks, setSelectedBooks] = useState([]);
 
-    const [selectedBook, setSelectedBook] =useState([])
- 
-     useEffect ( ()=> {
- 
- const storedReadIds = getStoredReadData()
- if(reads.length>0){
-     const appliedReads =reads.filter(read=> storedReadIds.includes(read.bookId))
-     
-     setSelectedBook(appliedReads)
-     console.log(appliedReads)
- }
- 
-     },[reads])
- 
+    useEffect(() => {
+        const storedWishlistIds = getWishlistData();
+        if (wishlistBooks.length > 0) {
+            const appliedWishlistBooks = wishlistBooks.filter(read => storedWishlistIds.includes(read.bookId));
+            setSelectedBooks(appliedWishlistBooks);
+        }
+    }, [wishlistBooks]);
+
     return (
         <div className="flex flex-col gap-5 ">
-         
-            {
-                selectedBook.map(read =>  <BookCard read={read}
-                     key={read.bookId}> </BookCard>   )
-            }
+            {selectedBooks.map(read => <BookCard read={read} key={read.bookId} />)}
         </div>
     );
 };

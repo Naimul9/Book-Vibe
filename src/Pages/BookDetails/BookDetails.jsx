@@ -1,7 +1,7 @@
 import {  Link, useLoaderData, useParams} from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-import { getReadData, saveReadData } from "../../utility/localStorage";
+import {  getReadData,  getWishlistData, removeWishlistData, saveReadData, saveWishlistData } from "../../utility/localStorage";
 
 
 const BookDetails = () => {
@@ -13,23 +13,35 @@ const BookDetails = () => {
    
     const handleRead = () => {
         const alreadyRead = getReadData().includes(idInt);
+        const alreadyWishlist = getWishlistData().includes(idInt);
+
         if (alreadyRead) {
-            toast('Book already added to Read list');
+            toast('You have already read this book.');
         } else {
             saveReadData(idInt);
             toast('Book added to Read list');
+
+            if (alreadyWishlist) {
+                removeWishlistData(idInt);
+                toast('Book removed from Wishlist');
+            }
         }
     };
 
     const handleWishlist = () => {
         const alreadyRead = getReadData().includes(idInt);
         if (alreadyRead) {
-            toast('You have already read this book and it cannot be added to the Wishlist.');
+            toast('You have already read this book. Cannot add to Wishlist.');
         } else {
-            toast('Book added to Wishlist');
+            const alreadyWishlist = getWishlistData().includes(idInt);
+            if (alreadyWishlist) {
+                toast('You have already added this book to Wishlist.');
+            } else {
+                saveWishlistData(idInt);
+                toast('Book added to Wishlist');
+            }
         }
     };
-
     return (
         <div className="hero min-h-screen ">
   <div className="hero-content flex-col lg:flex-row ">
