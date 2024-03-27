@@ -1,10 +1,14 @@
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+import { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
+
+
 
 const Listed_Books = () => {
-    return (
 
-        <div>
+    const [tabIndex, setTabIndex] = useState(0)
+    return (
+  
+<div>
 
 <div className='h-[100px] bg-[#1313130D] text-center text-[28px] font-bold rounded-lg items-center flex justify-center mb-10'>Books</div>
 
@@ -22,21 +26,21 @@ const Listed_Books = () => {
 </div>
 </div>
 
+{/* TAB */}
+<div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap text-black">
+	<Link to={`readBooks/&{bookId}`}  onClick={()=> setTabIndex(0)} rel="noopener noreferrer" href="#" className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex ===0 ? 'border border-b-0' : 'border-b'} rounded-t-lg border-gray-400`}>
+		<span>Read Books</span>
+	</Link>
+	<Link  to={'wishList'} onClick={()=> setTabIndex(1)} rel="noopener noreferrer" href="#" className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex ===1 ? 'border border-b-0' : 'border-b'} rounded-t-lg border-gray-400`}>
+		
+		<span>Wishlist Books</span>
+	</Link>
 
+</div>
 
-        <Tabs>
-        <TabList>
-          <Tab>  <p className='text-[18px]'> Read Books </p>  </Tab>
-          <Tab> <p className='text-[18px] '>  Wishlist </p>   </Tab>
-        </TabList>
-    
-        <TabPanel>
-          <h2>Any content 1</h2>
-        </TabPanel>
-        <TabPanel>
-          <h2>Any content 2</h2>
-        </TabPanel>
-      </Tabs>
+<Outlet/>
+        
+     
       </div>
     );
 };

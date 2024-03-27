@@ -13,6 +13,8 @@ import MainLayout from './layouts/MainLayout';
 import Home from './Pages/Home/Home';
 import Error from './Pages/Error/Error';
 import BookDetails from './Pages/BookDetails/BookDetails';
+import Read from './Components/Read';
+import Wish from './Components/Wish';
 
 
 const router = createBrowserRouter([
@@ -27,19 +29,38 @@ const router = createBrowserRouter([
         loader : () => fetch('/books.json')
       },
       {
-        path: "/bookdetail/:bookId",
+        path: "/bookDetail/:bookId",
         element: <BookDetails></BookDetails>,
         loader : ()=> fetch('/books.json'),
       },
 
       {
         path: "/listed-books",
-        element: <Listed_Books></Listed_Books>,
+        element: <Listed_Books></Listed_Books>, 
+        children:[
+          {
+            // Default route for readBooks
+            path: '',
+            element: <Read></Read>,
+            loader: () => fetch('/books.json'),
+          },
+          {
+            path : 'readBooks/:bookId',
+            element : <Read></Read>,
+            loader : ()=> fetch('/books.json'),
+          },
+          {
+            path : 'wishList',
+            element : <Wish></Wish>,
+            loader : ()=> fetch('/books.json'),
+          }
+        ],
       },
       {
         path: "/pages-to-read",
         element: <Pages_To_Read></Pages_To_Read>,
       },
+      
       
     ]
   },

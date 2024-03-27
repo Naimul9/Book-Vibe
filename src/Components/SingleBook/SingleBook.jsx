@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import { AiOutlineStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 const SingleBook = ({item}) => {
 
-    const {bookName, bookId, author,image,review, totalPages, rating, category, tags,publisher, yearOfPublishing   } = item
+    const {bookName, bookId, author,image,  rating, category, tags  } = item
     return (
 		<Link to={`/bookDetail/${bookId}`}>
         <div > 
