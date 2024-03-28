@@ -1,9 +1,13 @@
-import React from 'react';
+import ChartData from "../../Components/ChartData";
+
+
 
 const Pages_To_Read = () => {
+   
+ 
     return (
         <div>
-            
+      <ChartData></ChartData>
         </div>
     );
 };
