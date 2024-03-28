@@ -1,0 +1,31 @@
+import React from 'react';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, LabelList } from 'recharts';
+
+const CustomChart = ({ book }) => {
+    const { bookName, totalPages } = book;
+
+    return (
+        <BarChart
+            width={500}
+            height={300}
+            data={[{ name: bookName, totalPages: totalPages }]}
+            margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+            }}
+        >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="totalPages" fill="#8884d8">
+                <LabelList dataKey="totalPages" position="top" />
+            </Bar>
+        </BarChart>
+    );
+};
+
+export default CustomChart;

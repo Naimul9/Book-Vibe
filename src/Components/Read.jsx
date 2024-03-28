@@ -13,7 +13,7 @@ const Read = () => {
 
 const storedReadIds = getStoredReadData()
 if(reads.length>0){
-    const appliedReads =reads.filter( read=> storedReadIds.includes(read.bookId))
+    const appliedReads =reads.filter(read=> storedReadIds.includes(read.bookId))
     
     setSelectedBook(appliedReads)
     console.log(appliedReads)

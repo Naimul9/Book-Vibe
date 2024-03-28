@@ -9,7 +9,7 @@ const SingleBook = ({item}) => {
         <div > 
          
             
-          <section className="h-[481px] w-[374px] border rounded-xl">
+          <section className="h-[481px] lg:w-[374px] w-full border rounded-xl">
 	<div className="container p-6 mx-auto">
 	
 		<div>

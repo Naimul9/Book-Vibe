@@ -1,8 +1,9 @@
+import React from 'react';
 
 const Pages_To_Read = () => {
     return (
         <div>
-            Pages To read
+            
         </div>
     );
 };
