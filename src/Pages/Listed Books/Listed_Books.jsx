@@ -7,7 +7,6 @@ const Listed_Books = () => {
 
   const data = useLoaderData()
 
-  const [displayBooks, setDisplayBooks] =useState([])
 
   
 

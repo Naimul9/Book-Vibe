@@ -14,6 +14,10 @@ const Navbar = () => {
           <li> <NavLink to={'/listed-books'} className={({isActive})=> isActive? 'text-[#23BE0A] lg:text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >  Listed Books  </NavLink></li>
 
           <li>   <NavLink to={'/pages-to-read'} className={({isActive})=> isActive? 'text-[#23BE0A] lg:text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >Pages To Read</NavLink></li>
+
+          <li>   <NavLink to={'/trending-books'} className={({isActive})=> isActive? 'text-[#23BE0A] lg:text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >Contact Us</NavLink></li>
+
+          <li>   <NavLink to={'/about-us'} className={({isActive})=> isActive? 'text-[#23BE0A] lg:text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >About Us</NavLink></li>
            
               
             </ul>
@@ -26,6 +30,10 @@ const Navbar = () => {
           <li> <NavLink to={'/listed-books'} className={({isActive})=> isActive? 'text-[#23BE0A] text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >  Listed Books  </NavLink></li>
 
           <li>   <NavLink to={'/pages-to-read'} className={({isActive})=> isActive? 'text-[#23BE0A] text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >Pages To Read</NavLink></li>
+
+          <li>   <NavLink to={'/trending-books'} className={({isActive})=> isActive? 'text-[#23BE0A] text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >Contact Us</NavLink></li>
+
+          <li>   <NavLink to={'/about-us'} className={({isActive})=> isActive? 'text-[#23BE0A] text-[18px] font-semibold border border-[#23BE0A] h-[49px] pt-3 ': ''} >About us</NavLink></li>
            
               
           </ul>

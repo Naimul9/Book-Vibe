@@ -15,6 +15,8 @@ import Error from './Pages/Error/Error';
 import BookDetails from './Pages/BookDetails/BookDetails';
 import Read from './Components/Read';
 import Wish from './Components/Wish';
+import TrendingBooks from './Pages/Trending Books/TrendingBooks';
+import AboutUs from './Pages/About us/AboutUs';
 
 
 const router = createBrowserRouter([
@@ -62,8 +64,17 @@ const router = createBrowserRouter([
         element: <Pages_To_Read></Pages_To_Read>,
         loader : ()=> fetch('/books.json'),
       },
+      {
+        path: "/trending-books",
+        element: <TrendingBooks></TrendingBooks>,
+        loader : ()=> fetch('/books.json'),
       
-      
+      },
+      {
+        path: "/about-us",
+        element:<AboutUs></AboutUs>,
+        loader : ()=> fetch('/books.json'),
+      },
     ]
   },
   
