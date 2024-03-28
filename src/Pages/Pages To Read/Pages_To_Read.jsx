@@ -1,4 +1,5 @@
-import ChartData from "../../Components/ChartData";
+import CustomChart from "../../Components/CustomChart";
+
 
 
 
@@ -7,7 +8,7 @@ const Pages_To_Read = () => {
  
     return (
         <div>
-      <ChartData></ChartData>
+      <CustomChart></CustomChart>
         </div>
     );
 };
