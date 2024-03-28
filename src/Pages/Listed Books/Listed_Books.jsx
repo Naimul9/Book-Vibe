@@ -93,11 +93,7 @@ setDisplayBooks(booksApplied)
 </div>
 
 <Outlet/>
-{
-    displayBooks.map(book=> <li key={book.bookId}>{book.bookName} 
-    : {book.category} </li>
-      )
-  }
+
 
 
         
