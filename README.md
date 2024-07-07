@@ -1,6 +1,6 @@
 # Book Vibe
 
-[**Visit the live site**]([https://660554ea98b1c1195732e636--incredible-bublanina-2b5e7d.netlify.app/](https://6605aa4cbd2016088578b582--incredible-bublanina-2b5e7d.netlify.app/))
+[**Visit the live site**](https://6605aa4cbd2016088578b582--incredible-bublanina-2b5e7d.netlify.app/)
 
 ## Features 
 
